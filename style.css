@@ -1,0 +1,118 @@
+.body{
+    background :linear-gradient(to right, rgb(255,255,255), rgb(254,215,173)) !important;
+    width: 100%;
+}
+
+.navv{
+    z-index: 1000;
+    background:linear-gradient(to right, rgb(255,255,255), rgb(254,215,173)) !important;
+}
+
+.dar {
+    width: 100px;
+    height: 40px;
+}
+
+span {
+    color: rgba(158, 124, 36, 0.733);
+    text-shadow: 0 0 10px goldenrod;
+}
+
+.h1 {
+    font-size: 60px;
+}
+
+.h2 {
+    font-size: 40px;
+}
+
+.p {
+    font-size: 15px;
+}
+
+.darr {
+    width: 40px;
+    height: 40px;
+    box-shadow: 0 0 10 goldenrod;
+}
+
+.port {
+    height: 400px;
+    height: 400px;
+}
+
+.secc {
+    margin-top: 120px;
+}
+
+.navbar .nav-link {
+    position: relative;
+}
+
+.navbar .nav-link::before {
+    content: "";
+    position: absolute;
+    width: 0%;
+    bottom: -4px;
+    left: 0;
+    height: 3px;
+    background-color: goldenrod;
+    transition: 0.2s;
+}
+
+.navbar .nav-link:hover::before {
+    width: 100%;
+
+}
+
+
+.columnn:hover .hoverr {
+    opacity: 1;
+}
+
+
+.hoverr {
+    opacity: 0;
+    transition: 0.4s;
+}
+
+.mains {
+    margin-top: 100px;
+}
+
+
+
+.service-card {
+    background-color: #FFFDF9;
+    border-radius: 16px;       
+    padding: 30px 20px;        
+    height: 100%;   
+    width: 45%;
+    box-shadow: 0 10px 25px rgba(139, 90, 43, 0.15); 
+}   
+/* Icon & Typography Styling */
+.service-card .icon-wrapper i {
+    font-size: 40px;
+    color: #8B5A2B;
+}
+
+.service-card h4 {
+    color: #2D2D2D;
+    margin-bottom: 10px;
+}
+
+.service-card p {
+    color: #666666;
+    font-size: 15px;
+}
+
+
+
+
+.sendb {
+    background-color: #6d4300;
+    color: #fff;
+    text-shadow: 0 0 10px goldenrod;
+    padding-left: 30px;
+    padding-right: 30px;
+}
