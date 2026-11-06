@@ -116,3 +116,40 @@ span {
     padding-left: 30px;
     padding-right: 30px;
 }
+
+
+
+/* Responsive adjustments for phones (screens under 768px) */
+@media (max-width: 767.98px) {
+  /* Allow section heading wrappers to take full width on mobile */
+    .w-50 {
+    width: 100% !important;
+    }
+
+  /* Reset manual width overrides on cards so Bootstrap's grid works properly */
+    .service-card {
+    width: 100% !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    margin-bottom: 20px;
+    }
+
+  /* Adjust typography sizing for smaller screens */
+    .h1 {
+    font-size: 36px !important;
+    }
+
+    .h2 {
+    font-size: 28px !important;
+    }
+
+  /* Fix navigation overlay spacing or alignment if needed */
+    .navbar-nav {
+    text-align: center;
+    padding-top: 15px;
+    }
+
+    .navbar-nav .nav-item {
+    margin-bottom: 10px;
+    }
+}
