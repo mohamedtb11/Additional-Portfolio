@@ -119,14 +119,18 @@ span {
 
 
 
-/* Responsive adjustments for phones (screens under 768px) */
+/* Responsive adjustments for mobile devices */
 @media (max-width: 767.98px) {
-  /* Allow section heading wrappers to take full width on mobile */
-    .w-50 {
+  /* Safely expand section header wrappers to full width without breaking utility classes */
+    section .d-flex > div[class*="w-"] {
     width: 100% !important;
     }
 
-  /* Reset manual width overrides on cards so Bootstrap's grid works properly */
+    .port {
+        height: 200px;
+    }
+
+  /* Reset manual width overrides on cards so Bootstrap grid works correctly */
     .service-card {
     width: 100% !important;
     margin-left: 0 !important;
@@ -134,22 +138,29 @@ span {
     margin-bottom: 20px;
     }
 
-  /* Adjust typography sizing for smaller screens */
+  /* Make portfolio columns stack cleanly on mobile screen widths */
+    .col-md-4.columnn {
+    width: 100% !important;
+    margin-bottom: 20px;
+    }
+
+  /* Scale down large heading typography for smaller displays */
     .h1 {
-    font-size: 36px !important;
+    font-size: 38px !important;
     }
 
     .h2 {
-    font-size: 28px !important;
+    font-size: 26px !important;
     }
 
-  /* Fix navigation overlay spacing or alignment if needed */
-    .navbar-nav {
+  /* Center mobile navigation dropdown items */
+    .navbar-collapse .navbar-nav {
     text-align: center;
-    padding-top: 15px;
+    padding: 15px 0;
     }
 
-    .navbar-nav .nav-item {
-    margin-bottom: 10px;
+    .navbar-collapse .nav-item {
+    margin: 8px 0;
     }
 }
+
